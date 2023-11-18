@@ -19,6 +19,7 @@ header .menu1 .logo {
     display: flex;
     align-items: center;
     margin-left: 30px;
+    justify-content: flex-start;
 }
 header .menu1 .search{
     height: 100%;
@@ -610,18 +611,21 @@ main .slider2 .swiper-slide a{
     color: black;
     padding: 12px 16px;
 }
-main .slider2 .swiper-slide a .price{
+main .slider2 .swiper-slide a .prices{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row-reverse nowrap;
 }
-main .slider2 .swiper-slide a .price .real{
+main .slider2 .swiper-slide a .prices .price .real-svg{
+    gap: 4px;
+}
+main .slider2 .swiper-slide a .prices .price .real{
     font-size: 15px;
     color: black;
 }
-main .slider2 .swiper-slide a .price .discount{
+main .slider2 .swiper-slide a .prices .discount{
     background-color: crimson;
     color: #e0e0e2;
     border-radius: 10px;
@@ -696,7 +700,7 @@ main .supermarkets{
     margin-top: 20px;
     border-radius: 15px;
     position: relative;
-    background-color: silver;
+    background-color: #f0f0f1;
 }
 main .supermarkets .supermarket:first-child{
     width: 500px;
@@ -1033,14 +1037,6 @@ main .partitions .partition .partition-img .partition-border a img{
     height: 130px;
     object-fit: cover;
 }
-main .partitions .partition .partition-img .partition-border:nth-child(1){
-    border-left: 1px solid #e0e0e2;
-    border-bottom: 1px solid #e0e0e2;
-}
-main .partitions .partition .partition-img .partition-border:nth-child(4){
-    border-right: 1px solid #e0e0e2;
-    border-top: 1px solid #e0e0e2;
-}
 main .partitions .partition .partition-link{
     width: 292px;
     height: 26px;
@@ -1064,7 +1060,7 @@ main .plus-part{
     padding: 16px;
     border-radius: 20px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 main .plus-part .right{
@@ -1257,7 +1253,6 @@ main .partitions2 .partition{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    border-left: 1px solid #e0e0e2;
 }
 main .partitions2 .partition:last-child{
     border-left: 0;
@@ -1293,14 +1288,6 @@ main .partitions2 .partition .partition-img .partition-border a img{
     height: 130px;
     object-fit: cover;
 }
-main .partitions2 .partition .partition-img .partition-border:nth-child(1){
-    border-left: 1px solid #e0e0e2;
-    border-bottom: 1px solid #e0e0e2;
-}
-main .partitions2 .partition .partition-img .partition-border:nth-child(4){
-    border-right: 1px solid #e0e0e2;
-    border-top: 1px solid #e0e0e2;
-}
 main .partitions2 .partition .partition-link{
     width: 292px;
     height: 26px;
@@ -1316,7 +1303,95 @@ main .partitions2 .partition .partition-link a{
     color: #19bfd3;
 }
 /*slider5*/
+main .slider5{
+    width: 100%;
+    height: 404px;
+    margin-top: 20px;
+    border: 1px solid #e0e0e2;
+    border-radius: 20px;
+    padding: 16px 0;
+}
+main .slider5 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+main .slider5 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 110px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .slider5 .swiper-slide .slider5-thing{
+    width: 100%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    text-decoration: none;
+}
+main .slider5 .swiper-slide .slider5-thing img{
+    width: 86px;
+    height: 86px;
+    margin-left: 12px;
+}
+main .slider5 .swiper-slide .slider5-thing span{
+    font-size: 26px;
+    margin-left: 12px;
+    color: #19bfd3;
+}
+main .slider5 .swiper-slide .slider5-thing .slider5-text p{
+    font-size: 12px;
+    color: black;
+}
+main .slider5 .slider5-header{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .slider5 .slider5-header svg{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+main .slider5 .slider5-header p{
+    font-size: 21px;
+}
+main .slider5 .swiper-button-prev{
+     background-color: white;
+     border: 1px solid #e0e0e2;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     padding-bottom: 5px;
+     position: absolute;
+     right: 0;
+     top: 50%;
+ }
+main .slider5 .swiper-button-prev::after{
+    content: url("../images/svgexport-16.svg") !important;
+}
+main .slider5 .swiper-button-next{
+    background-color: white;
+    border: 1px solid #e0e0e2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+main .slider5 .swiper-button-next::after{
+    content: url("../images/svgexport-15 (1).svg") !important;
+}
 /*picture4*/
 main .picture4{
     width: 100%;
@@ -1330,4 +1405,224 @@ main .picture4 img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+/*free*/
+main .free{
+    width: 100%;
+    height: 812px;
+    border: 1px solid #e0e0e2;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+main .free .free-title{
+    width: 100%;
+    height: 76px;
+    margin-bottom: 8px;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .free .free-title svg{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+main .free .free-title p{
+    font-size: 21px;
+}
+main .free .free-parts{
+    width: 100%;
+    height: 726px;
+    display: flex;
+    flex-flow: row wrap;
+}
+main .free .free-parts .free-part{
+    width: calc(100% / 6);
+    height: 242px;
+    padding: 12px 8px;
+    display: block;
+}
+main .free .free-parts .free-part a{
+    text-decoration: none;
+}
+main .free .free-parts .free-part a img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+main .free .free-parts .free-part a .free-prices{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row-reverse nowrap;
+}
+main .free .free-parts .free-part a .free-prices .free-price .free-real-svg{
+    gap: 4px;
+}
+main .free .free-parts .free-part a .free-prices .free-price .free-real{
+    font-size: 15px;
+    color: black;
+}
+main .free .free-parts .free-part a .free-prices .free-discount{
+    background-color: crimson;
+    color: #e0e0e2;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+main .free .free-parts .free-part a .free-text-line{
+    display: block;
+    text-align: left;
+    margin-top: 8px;
+    font-size: 12px;
+    color: silver;
+    text-decoration: line-through;
+}
+/*slider6*/
+main .slider6{
+    width: 100%;
+    height: 404px;
+    margin-top: 20px;
+    border: 1px solid #e0e0e2;
+    border-radius: 20px;
+    padding: 16px 0;
+}
+main .slider6 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .slider6 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 110px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .slider6 .swiper-slide .slider5-thing{
+    width: 100%;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    text-decoration: none;
+}
+main .slider6 .swiper-slide .slider5-thing img{
+    width: 86px;
+    height: 86px;
+    margin-left: 12px;
+}
+main .slider6 .swiper-slide .slider5-thing span{
+    font-size: 26px;
+    margin-left: 12px;
+    color: #19bfd3;
+}
+main .slider6 .swiper-slide .slider5-thing .slider5-text p{
+    font-size: 12px;
+    color: black;
+}
+main .slider6 .slider6-header{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .slider6 .slider6-header svg{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+main .slider6 .slider6-header p{
+    font-size: 21px;
+}
+main .slider6 .swiper-button-prev{
+    background-color: white;
+    border: 1px solid #e0e0e2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+main .slider6 .swiper-button-prev::after{
+    content: url("../images/svgexport-16.svg") !important;
+}
+main .slider6 .swiper-button-next{
+    background-color: white;
+    border: 1px solid #e0e0e2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+main .slider6 .swiper-button-next::after{
+    content: url("../images/svgexport-15 (1).svg") !important;
+}
+/*for-read*/
+main .for-read{
+    width: 100%;
+    height: 344px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 30px;
+}
+main .for-read .for-read-header{
+    width: 100%;
+    height: 65px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .for-read .for-read-header a{
+    text-decoration: none;
+    color: #19bfd3;
+    font-size: 12px;
+}
+main .for-read .for-read-parts{
+    width: 100%;
+    height: 279px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+
+}
+main .for-read .for-read-parts .for-read-part{
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    text-decoration: none;
+    border: 1px solid #e0e0e2;
+    border-radius: 15px;
+}
+main .for-read .for-read-parts .for-read-part .for-read-img img{
+    width: 100%;
+    height: 201px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+main .for-read .for-read-parts .for-read-part p{
+    font-size: 12px;
+    color: black;
+    padding: 0 16px;
+    margin: 8px 0;
 }
